@@ -1,0 +1,22 @@
+{
+        "changed": true,
+        "cmd": [
+            "mongosh",
+            "mongodb.kranthi.fun",
+            "--quiet",
+            "--eval",
+            "db.getMongo().getDBNames().indexOf('catalogue')"
+        ],
+        "delta": "0:00:00.860922",
+        "end": "2025-10-11 03:43:22.647866",
+        "failed": false,
+        "msg": "",
+        "rc": 0,
+        "start": "2025-10-11 03:43:21.786944",
+        "stderr": "",
+        "stderr_lines": [],
+        "stdout": "-1",
+        "stdout_lines": [
+            "-1"
+        ]
+    }

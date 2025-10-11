@@ -69,4 +69,7 @@
      ansible.builtin.debug:
       msg: "{{ catalogue_output }}"
 
+    - name: load products into mongodb
+      ansible.bultin.shell: model mongodb.kranthi.fun </app/db/master-data.js
+      when: catalogue_output.stdout < 0
    
