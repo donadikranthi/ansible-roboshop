@@ -1,3 +1,4 @@
+
 - name: setup mongodb server
   hosts: mongodb
   become: yes
@@ -11,13 +12,13 @@
     ansible.builtin.package:
       name: mongodb-org
       state: present
-
+      
   - name: allow remote connections
     ansible.builtin.replace:
-      path : /etc/mongod.conf
-      regexp: '127.0.0.1' 
+      path: /etc/mongod.conf
+      regexp: '127.0.0.1'
       replace: '0.0.0.0'
-
+  
   - name: start and enable service
     ansible.builtin.service:
       name: mongod
