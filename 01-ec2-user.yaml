@@ -3,7 +3,7 @@
   connection: local
   vars:
     ami_id: ami-09c813fb71547fc4f
-    sg_id: sg-069f722e1125dd734 # replace with your SG ID
+    sg_id: sg-09c2d8eae6cc4e894 # replace with your SG ID
     zone_id: "Z04572451B9X32T33PSC8" # replace with your ID
     domain_name: "kranthi.fun"
     # we cam pass instances through command line using -e option 
