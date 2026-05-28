@@ -7,7 +7,7 @@
     zone_id: "Z01986933OSMNS8YES912" 
     domain_name: "kranthi86s.fun"  ## we can pass domain name through command line using -e option
     instances:
-      - mongodb
+    - mongodb
     # - mysql
     # - redis
     # - rabbitmq
