@@ -3,7 +3,7 @@
   connection: local
   vars:
     ami_id: ami-0220d79f3f480ecf5
-    sg_id: sg-06cbfac048bc6f429  #My security group id
+    sg_id: sg-06cbfac048bc6f429  # My security group id
     zone_id: "Z01986933OSMNS8YES912" 
     domain_name: "kranthi86s.fun"  ## we can pass domain name through command line using -e option
     instances:
@@ -42,7 +42,7 @@
     amazon.aws.route53:
       state: present
       zone: "{{ domain_name }}"
-      record: "{{ item.item }}.{{ domain_name }}" # mongodb.kranthi.fun
+      record: "{{ item.item }}.{{ domain_name }}" # mongodb.kranthi86s.fun
       type: A
       ttl: 1
       value: "{{ item.instances[0].private_ip_address }}"
