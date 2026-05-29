@@ -4,8 +4,8 @@ Description = Cart Service
 [Service]
 User=roboshop
 // highlight-start
-Environment=REDIS_HOST=redis.kranthi.fun
-Environment=CATALOGUE_HOST=catalogue.kranthi.fun
+Environment=REDIS_HOST=redis.kranthi86s.fun
+Environment=CATALOGUE_HOST=catalogue.kranthi86s.fun
 Environment=CATALOGUE_PORT=8080
 // highlight-end
 ExecStart=/bin/node /app/server.js
