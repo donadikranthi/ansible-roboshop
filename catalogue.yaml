@@ -67,7 +67,7 @@
       state: present
 
   - name: connnect to mongodb catalogue
-    ansible.builtin.command: mongosh 172.31.4.119 --quiet --eval "db.getMongo().getDBNames().indexOf('catalogue')"
+    ansible.builtin.command: mongosh mongodb.kranthi86s.fun --quiet --eval "db.getMongo().getDBNames().indexOf('catalogue')"
     register: catalogue_output
 
   # - name: evaluate catalogue database
@@ -81,7 +81,7 @@
   #     msg: "{{ catalogue_output }}"
 
   - name: load products into mongodb
-    ansible.builtin.shell: mongosh --host 172.31.4.119 </app/db/master-data.js
+    ansible.builtin.shell: mongosh --host mongodb.kranthi86s.fun </app/db/master-data.js
     when: catalogue_output.stdout | int < 0
 
   - name: start and enable catalogue
