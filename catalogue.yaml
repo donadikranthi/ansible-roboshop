@@ -68,8 +68,6 @@
 
   - name: connnect to mongodb catalogue
   ansible.builtin.command: mongosh mongodb.kranthi86s.fun --quiet --eval "db.getMongo().getDBNames().indexOf('catalogue')"
-    register: catalogue_output
-    changed_when: false
 
   # - name: evaluate catalogue database
   #   community.mongodb.mongodb_shell
