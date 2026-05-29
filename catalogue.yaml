@@ -70,11 +70,11 @@
     ansible.builtin.command: mongosh 172.31.27.204 --quiet --eval "db.getMongo().getDBNames().indexOf('catalogue')"
     register: catalogue_output
 
-  - name: evaluate catalogue database
-    community.mongodb.mongodb_shell
-      login_host: 172.31.4.119
-      eval: db.getMongo().getDBNames().indexOf('catalogue')
-    register: catalogue_output
+  # - name: evaluate catalogue database
+  #   community.mongodb.mongodb_shell
+  #     login_host: mongodb.kranthi86s.fun
+  #     eval: db.getMongo().getDBNames().indexOf('catalogue')
+  #   register: catalogue_output
 
   # - name: print catalogue output
   #   ansible.builtin.debug:
