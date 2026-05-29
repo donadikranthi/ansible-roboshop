@@ -8,9 +8,9 @@
     domain_name: "kranthi86s.fun"  ## we can pass domain name through command line using -e option
     instances:
     - mongodb
-    # - mysql
-    # - redis
-    # - rabbitmq
+    - mysql
+    - redis
+    - rabbitmq
   
   tasks:
   - name: create ec2 instance
